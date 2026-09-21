@@ -1,0 +1,8 @@
+def total(carrinho):
+    itens = carrinho[:]  #copia rasa
+    itens.append("brinde")
+    return itens
+original = ["arroz"]
+novo = total(original)
+print(original)  #["arroz"]
+print(novo)  #['arroz', 'brinde']
